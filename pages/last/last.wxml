@@ -1,0 +1,57 @@
+<!--button class="my-button" type="warn" disabled="true">
+ <icon class="icon-small" type="warn" size="23"></icon>
+ 请输入宝妈姓名
+ 
+ </button-->
+<!--view >
+<view class="table">  
+  <view class="tr bg-w">  
+    <view class="th">检测项目</view>  
+    <view class="th-2">检测值</view>
+    <view class="th-3">参考评价</view>    
+  </view>  
+  <block wx:for="{{listData}}" wx:key="{{code}}">  
+    <view class="tr bg-g"  >  
+      <view class="td-1" selectable="true">{{item.code}}</view>  
+      <view class="td-2" selectable="true"  scroll-y="true" >{{item.type}}</view> 
+       <view class="td-3" selectable="true" scroll-y="true" >{{item.assess}} </view>  
+
+    </view>  
+
+  </block> 
+  </view> 
+</view> 
+  <view class="page-body">
+      <view class="weui__title" >
+        <text>偏弱：该检测值远远低于母乳中此营养素的均值</text>
+      </view>
+            <view class="weui__title" >
+        <text>适中：该检测值略低于母乳中此营养素的均值</text>
+      </view>
+            <view class="weui__title" >
+        <text>丰富：该检测值达到母乳中此营养素的均值</text>
+      </view>
+            <view class="weui__title" >
+        <text>优良：该检测值高于母乳中此营养素的均值</text>
+      </view>
+  </view-->
+<view class='page__bd'>
+ <form report-submit bindsubmit='orderSign'>
+  <view>
+    <text class='titel'>{{time}}</text>
+  </view>
+  <view>
+    <text class='yes'>{{listData[1].type}}</text>
+    <text class='no'>{{listData[1].assess}}</text>
+  </view>
+  <view>
+    <text class='yes1'>{{listData[0].type}}</text>
+    <text class='no1'>{{listData[0].assess}}</text>
+  </view>
+  <view>
+    <text class='yes2'>{{listData[2].type}}</text>
+    <text class='no2'>{{listData[2].assess}}</text>
+  </view>
+  </form>
+  <button class="myClass" bindtap="logIn">点击获取更多专家营养建议</button>
+</view>

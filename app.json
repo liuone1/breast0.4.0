@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/first/first",
+    "pages/share/share",
+    "pages/second/second",
+    "pages/third/third",
+    "pages/infor/infor",
+    "pages/infor1/infor1",
+    "pages/verify/verify",
+    "pages/last/last"
+  ],
+  "window": {
+    "backgroundTextStyle": "black",
+    "navigationBarBackgroundColor": "#FF69B4",
+    "navigationBarTitleText": "优吗母乳测测测",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#FF69B4"
+  }
+}

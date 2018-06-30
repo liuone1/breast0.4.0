@@ -1,0 +1,61 @@
+<view>
+  <view class="weui-cells__title">请填写宝宝信息</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">宝宝生日</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="date" value="{{date1}}" start="2000-01-01" end="2050-12-31" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">宝宝体重（斤/两）</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">宝宝体重</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange2" bindcolumnchange="bindMultiPickerColumnChange2" value="{{multiIndex}}" range="{{objectMultiArray}}" range-key="{{'name'}}">
+          <view class="weui-input">{{objectMultiArray[0][multiIndex2[0]].name}}/{{objectMultiArray[1][multiIndex2[1]].name}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="page-section page-section-gap">
+    <view class="page-section-title">宝宝性别</view>
+    <radio-group bindchange="listenerK_Sex">
+      <label>
+        <radio color='#ff69b4' value="男" />男</label>
+      <label style='margin-left:55px;'>
+        <radio color='#ff69b4' value="女" />女</label>
+    </radio-group>
+    <view class="page-section-title">出生情况</view>
+    <radio-group bindchange="listenerK_Sta">
+      <label>
+        <radio color='#FF69B4' value="正常" />正常</label>
+      <label style='margin-left:40px;'>
+        <radio color='#ff69b4' value="早产" />早产</label>
+    </radio-group>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">初乳时间</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-label">初乳时间</view>
+        <view class="weui-cell__hd">
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="weui-input">{{array[index]}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-area">
+    <button class='myClass' bindtap="logIn">提交数据 </button>
+  </view>
+</view>

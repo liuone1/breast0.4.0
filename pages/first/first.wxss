@@ -1,0 +1,41 @@
+/**index.wxss**/
+@import "/pages/common/lib/weui.wxss";
+
+.myClass {
+  background-color: #ff69b4;
+  color: #fff;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.user-motto {
+  display: block;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 20px;
+}
+
+.usermotto input {
+  color: #000;
+  margin-bottom: 10px;
+  background-color: gainsboro;
+}

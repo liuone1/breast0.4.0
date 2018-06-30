@@ -1,0 +1,18 @@
+
+<view class="container-box">
+    <view class="img-box">
+        <image bindtap="previewImg" mode="scaleToFill" src="{{imagePath}}"></image>
+          
+    </view>
+  <view class='first'>提示：</view>
+   <view class='first1'>扫描或者识别二维码，获取更多专家营养建议</view>
+   <radio-group bindchange="send" >
+    <label class='send'>
+    <checkbox color="#FF69B4" value="发送短信并" />如需发送短信，请选择！</label>
+    </radio-group>
+    <button class="myClass" bindtap="logIn">点击{{send}}查看详情</button>
+</view>
+<view class="canvas-box">
+  <canvas  hidden="{{canvasHidden}}" style="width: 686rpx;height: 686rpx;background:#f1f1f1;" canvas-id="mycanvas"/>
+
+</view>

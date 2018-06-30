@@ -1,0 +1,6 @@
+<!--pages/index/index.wxml-->
+<view class='page__bd'>
+</view>
+<view class="btn-area">
+  <button class='myClass' bindtap="logIn">扫码登记 </button>
+</view>

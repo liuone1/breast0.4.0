@@ -1,0 +1,63 @@
+<view>
+  <view class="page-section">
+    <view class="weui-cells__title">请填写宝妈生育信息</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">生育年龄</view>
+        </view>
+        <input class="weui-input" maxlength="2" type="number" auto-focus placeholder="请输入宝妈年龄" bindinput='B_AgeInput' />
+        <view class="weui-cell__ft">
+          <view class="weui-vcode-btn" color="#FF69B4" bindtap="reSendPhoneNum">岁</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="page-section page-section-gap">
+    <view class="page-section-title">分娩方式</view>
+    <radio-group bindchange="listenerB_Mth">
+      <label>
+        <radio color="#FF69B4" value="自然分娩" />自然分娩</label>
+      <label style='margin-left:10px;'>
+        <radio color="#FF69B4" value="阴道助产" />阴道助产</label>
+      <label style='margin-left:10px;'>
+        <radio color="#FF69B4" value="剖宫产" />剖宫产</label>
+    </radio-group>
+  </view>
+  <view class="page-section page-section-gap">
+    <view class="page-section-title">饮食习惯</view>
+    <radio-group bindchange="listenerB_Food">
+      <label>
+        <radio color="#FF69B4" value="正常膳食" />正常膳食</label>
+      <label style='margin-left:10px;'>
+        <radio color="#FF69B4" value="半素食" />半素食</label>
+      <label style='margin-left:26px;'>
+        <radio color="#FF69B4" value="素食" />素食</label>
+    </radio-group>
+  </view>
+  <view class="page-section page-section-gap">
+    <view class="page-section-title">喂养方式</view>
+    <radio-group bindchange="listenerB_Feed">
+      <label>
+        <radio color="#FF69B4" value="纯母乳" />纯母乳</label>
+      <label style='margin-left:24px;'>
+        <radio color="#FF69B4" value="混合喂养" />混合喂养</label>
+      <label style='margin-left:12px;'>
+        <radio color="#FF69B4" value="纯奶粉" />纯奶粉</label>
+    </radio-group>
+  </view>
+  <view class="page-section page-section-gap">
+    <view class="page-section-title">胎次</view>
+    <radio-group bindchange="listenerB_Chid">
+      <label>
+        <radio color="#FF69B4" value="头胎" />头胎</label>
+      <label style='margin-left:40px;'>
+        <radio color="#FF69B4" value="二胎" />二胎</label>
+      <label style='margin-left:44px;'>
+        <radio color="#FF69B4" value="大于等于三胎" />大于二胎</label>
+    </radio-group>
+  </view>
+  <view class="btn-area">
+    <button class="myClass" bindtap="logIn">下一步 </button>
+  </view>
+</view>

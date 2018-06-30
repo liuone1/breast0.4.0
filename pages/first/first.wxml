@@ -1,0 +1,72 @@
+<!--index.wxml-->
+
+
+<view>
+  <view class="page-section">
+    <view class="weui-cells__title">请填写宝妈基本信息</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">宝妈姓名</view>
+        </view>
+        <input class="weui-input" maxlength="6" auto-focus placeholder="请输入宝妈的姓" bindinput='M_NameInput' />
+        <view class="weui-cell__ft">
+          <view class="weui-vcode-btn" color="#FF69B4" bindtap="reSendPhoneNum">女士</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">手机号码</view>
+        </view>
+        <input class="weui-input" maxlength="11" type="number" placeholder="请输入宝妈手机号码" bindinput='M_MPNInput' />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">身高</view>
+        </view>
+        <input class="weui-input" maxlength="4" type="number" placeholder="请输入身高" bindinput='M_HTInput' />
+        <view class="weui-cell__ft">
+          <view class="weui-vcode-btn" color="#FF69B4" bindtap="reSendPhoneNum">cm</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">体重</view>
+        </view>
+        <input class="weui-input" maxlength="4" type="number" placeholder="请输入体重" bindinput='M_WTInput' />
+        <view class="weui-cell__ft">
+          <view class="weui-vcode-btn" color="#FF69B4" bindtap="reSendPhoneNum">kg</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">民 族</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="weui-input">{{array[index]}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-area">
+    <button class="myClass" bindtap="logIn">下一步 </button>
+  </view>
+</view>

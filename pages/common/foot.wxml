@@ -1,0 +1,5 @@
+<template name="foot">
+  <navigator class="page-foot" open-type="navigate"  url="/pages/register/register"  hover-class="none">
+    <image class="icon-foot" src="/images/icon_foot.png"></image>
+  </navigator>
+</template>
